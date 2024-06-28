@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="aboutstyles.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="image/bg-img/Group 1.png" alt="logo" style="height: 40px;">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--section 1-->
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <h1 class="display-4">Gallery</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4" onclick="showModal('Product 1', 'Description of product 1', 'image/bg-img/jennie.jpg')">
+                <div class="card">
+                    <img src="image/bg-img/jennie.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <p class="card-text">View</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" onclick="showModal('Product 2', 'Description of product 2', 'image/bg-img/jennie2.jpg')">
+                <div class="card">
+                    <img src="image/bg-img/jennie2.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <p class="card-text">View</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" onclick="showModal('Product 3', 'Description of product 3', 'image/bg-img/komahi.JPG')">
+                <div class="card">
+                    <img src="image/bg-img/komahi.JPG" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <p class="card-text">View</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" onclick="showModal('Product 4', 'Description of product 4', 'image/core-img/event2.jpg')">
+                <div class="card">
+                    <img src="image/core-img/event2.jpg" class="card-img-top" alt="Product 4">
+                    <div class="card-body">
+                        <p class="card-text">View</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" onclick="showModal('Product 5', 'Description of product 5', 'image/bg-img/mataf1.JPG')">
+                <div class="card">
+                    <img src="image/bg-img/mataf1.JPG" class="card-img-top" alt="Product 5">
+                    <div class="card-body">
+                        <p class="card-text">View</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" onclick="showModal('Product 6', 'Description of product 6', 'image/core-img/event2.jpg')">
+                <div class="card">
+                    <img src="image/core-img/event2.jpg" class="card-img-top" alt="Product 6">
+                    <div class="card-body">
+                        <p class="card-text">View</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tambahkan lebih banyak kartu produk sesuai kebutuhan -->
+        </div>
+
+        <!--section 2-->
+        <h2 class="mt-5">Random</h2>
+        <div class="grid-container mt-3">
+            <div>
+                <img src="image/bg-img/wahyu.jpg" class="img-fluid" >
+                <p class="font-weight-bold">Wahyu</p>
+                <p>Analog</p>
+            </div>
+            <div>
+                <img src="image/bg-img/rijal.jpg" class="img-fluid" >
+                <p class="font-weight-bold">Rizal</p>
+                <p>Analog</p>
+            </div>
+            <div>
+                <img src="image/bg-img/pakparjiono.jpg" class="img-fluid">
+                <p class="font-weight-bold">Pak Parjono</p>
+                <p>Black And White</p>
+            </div>
+            <div>
+                <img src="image/bg-img/basket.jpg" class="img-fluid" >
+                <p class="font-weight-bold">Basket</p>
+                <p>Sport</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <!---->
+    <footer>
+        <div class="footer-content">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </div>
+        <div class="contact-info">
+            <a href="mailto:EyesLens01@example.com">EyesLens01@exampl.com</a>
+            <a href="https://wa.me/+6281225487266">+6281225487266</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/foosaan/" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.all.min.js"></script>
+    <script>
+        function showModal(title, description, imageUrl) 
+        {
+            Swal.fire({
+                title: title,
+                text: description,
+                imageUrl: imageUrl,
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: title,
+                confirmButtonText: 'Close'
+            });
+        }
+    </script>
+</body>
+</html>

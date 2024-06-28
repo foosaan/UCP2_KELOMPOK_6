@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    top: 0;
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+    color: #424445;
+}
+
+.jumbotron {
+    background-image: url('background.jpg');
+    background-size: cover;
+    color: rgb(56, 55, 55);
+    text-align: center;
+}
+
+.card {
+    cursor: pointer;
+}
+
+footer {
+    background-color: #424445;
+    padding: 20px 0;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer .contact-info {
+    display: flex;
+    align-items: center;
+}
+
+footer a {
+    margin: 0 10px;
+    color: #000;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+.text-right {
+    text-align: right;
+}
+
+.logo1 {
+    font-size: 24px;
+    position: absolute;
+    right: 20px;
+    height: 100px;
+
+}

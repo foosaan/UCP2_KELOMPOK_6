@@ -1,0 +1,260 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+nav {
+    position: sticky;
+    top: 0;
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    position: absolute;
+    left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#background-video iframe {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+header button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+header button:hover {
+    background-color: #777;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.about-content img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px; 
+}
+
+.card {
+    display: grid;
+    background-color: #e3e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.2s;
+    width: 30%;
+    border: 1px solid #403f3f;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.aditional-info1 {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 20px;
+    align-items: center;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.7);
+    border-top: 2px solid #0b0808;
+    border-bottom: 2px solid #e3e0e0;
+}
+
+.aditional-info {
+    position: relative;
+    color: rgb(222, 210, 210);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 20px;
+    align-items: center;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.7);
+    border-top: 2px solid #0b0808;
+    border-bottom: 2px solid #e3e0e0;
+}
+
+.info  {
+    background: rgba(89, 88, 88, 0.7);
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.footer-content {
+    z-index: 1;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+footer .footer-content {
+    margin-bottom: 20px;
+
+}
+
+footer .footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+footer .contact-info {
+    margin-top: 40px;
+    position: absolute;
+    right: 20px;
+    text-align: right;
+}
+
+footer .contact-info a {
+    color: rgb(246, 241, 241);
+    text-decoration: none;
+    display: block;
+}
+
+footer .social-icons {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .social-icons i {
+    font-size: 24px;
+}
+
+footer .logo1 {
+    font-size: 24px;
+    position: absolute;
+    left: 20px;
+}

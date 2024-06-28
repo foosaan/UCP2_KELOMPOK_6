@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="image/bg-img/logoputih.png" width="140px"></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <div class="overlay"></div>
+        <div id="background-video">
+            <iframe src="https://www.youtube.com/embed/njX2bu-_Vw4?autoplay=1&mute=1&loop=1&playlist=njX2bu-_Vw4" frameborder="0" allow="autoplay; loop; fullscreen" allowfullscreen></iframe>
+        </div>
+        <div class="header-content">
+            <h1>Mendokumentasikan Segala Kenangan Anda</h1>
+            <button onclick="scrollToSection('about')">Lorem</button>
+        </div>
+    </header>
+
+    <!--section 1-->
+    <section id="about">
+        <h2>Eyes Lens</h2>
+        <div class="about-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <img src="image/bg-img/komahi.JPG" alt="Image">
+        </div>
+    </section>
+
+    <!--section 2-->
+    <section id="services" class="aditional-info1">
+        <h2>Kategori</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="image/bg-img/jennie.jpg" alt="Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+            </div>
+            <div class="card">
+                <img src="image/bg-img/basket.jpg" alt="Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+            </div>
+            <div class="card">
+                <img src="image/bg-img/rijal.jpg" alt="Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--section 3-->
+    <section class="aditional-info">
+        <div class="info">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button onclick="scrollToSection('contact')">Lorem</button>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <div class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </div>
+        <div class="contact-info">
+            <a href="mailto:EyesLens01@example.com">EyesLens01@exampl.com</a>
+            <a href="https://wa.me/+6281225487266">+6281225487266</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/foosaan/" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+        <div class="logo1">
+            <img src="image/bg-img/logoputih.png" alt="logo" style="height: 50px;">
+        </div>
+    </footer>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

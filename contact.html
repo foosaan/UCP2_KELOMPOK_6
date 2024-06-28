@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTTX1hGh1UQeJ8bdC7PCo6U+1xAG2wGZAmI6C0D14ZOnm11abHg3P2uzXrx5Uul1h0/+OZol5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js">
+    <link rel="stylesheet" href="contactstyles.css">
+
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="image/bg-img/logoputih.png" width="140px"></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!--section 1-->
+    <header>
+        <h1>Contact</h1>
+        <p>hubungi kami jika anda tertarik</p>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" placeholder="Message" rows="5" required></textarea>
+            <button type="send">send</button>
+        </form>
+    </header>
+
+    <!--section 2-->
+    <section id="contact-info">
+        <h2>EyesLens</h2>
+        <div class="contact-info">
+            <div>
+                <p>Deket Universitas Muhammadiyah Yogyakarta</p>
+                <p><a href="https://wa.me/+6281225487266">+6281225487266</a></p>
+                <p><a href="mailto:EyesLens01@example.com">EyesLens01@exampl.com</a></p>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.087260089257!2d110.3570723147783!3d-7.8015688793932865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a58a4061074f3%3A0x39fa535a7f8821d0!2sUniversitas%20Muhammadiyah%20Yogyakarta!5e0!3m2!1sen!2sid!4v1625988466115!5m2!1sen!2sid"  allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!---->
+    <footer>
+        <div class="footer-content">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </div>
+        <div class="contact-info">
+            <a href="mailto:EyesLens01@example.com">EyesLens01@exampl.com</a>
+            <a href="https://wa.me/+6281225487266">+6281225487266</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/foosaan/" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            Swal.fire({
+                title: 'Contact Form Submission',
+                html: 'Name: ' + name + '<br>Email: ' + email + '<br>Message: ' + message,
+                icon: 'success'
+            });
+        });
+    </script>
+</body>
+</html>
